@@ -1,0 +1,63 @@
+/*reset básico y configuración box*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F8F0D8;
+    color: #080D0B;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #3C3F20;
+    margin-bottom: 3rem;
+}
+
+/*estilos de imagen¨*/
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*para los botonoes*/
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    background-color: #CE8A39;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #b8792a;
+    transform: translateY(-3px);
+    box-shadow: #080D0B;
+}
