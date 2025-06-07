@@ -12,10 +12,11 @@
 </head>
 <body>
     <!--Encabezado y navegación-->
-    <header>
-        <h1>EcoVida</h1>
-        <nav>
-            <ul>
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">EcoVida</a>
+            <nav class="header__nav">
+                <ul>
                 <li><a href="#hero">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#comparativa">Beneficios</a></li>
@@ -26,57 +27,59 @@
 
     <main>
         <!--sección hero-->
-        <section id="hero">
-            <div>
+        <section id="hero" class="hero">
+            <div class="hero__grid container">
+                <div class="hero__text">
                 <h2>Vive en armonía con el planeta, Cada elección cuenta.</h2>
                 <p>En EcoVida, creemos que un futuro sostenible es posible. Te ofrecemos una variedad de productos ecológicos, diseñados para un estilo de vida consciente que cuida de ti y del medio ambiente. Únete al cambio</p>
             </div>
-            <div>
-                <img src="./img/Paisaje verde y frondoso.jpg" alt="Imagen de un paisake verde y prondoso que simboliza la sostenibilidad">
+            <div class="hero__image">
+                <img src="./img/Paisaje verde y frondoso.jpg" alt="Imagen de un paisaje verde y frondoso que simboliza la sostenibilidad">
             </div>
         </section>
 
         <!--sección de productos-->
-        <section id="productos">
-            <h2>Nuestro favoritos para un hogar sostenible</h2>
-            <div>
-                <!--primer producto-->
-                <article>
+        <section id="productos" class="products">
+            <div class="container">
+                <h2 class="section-title">Nuestros Favoritos para un Hogar Sostenible</h2>
+                <div class="products__flex-container">
+                    <!-- Producto 1 -->
+                    <article class="product-card">
                     <img src="./img/Botella de acero inoxidable.jpg" alt="Botella de acero inoxidable">
-                    <div>
+                    <div class="product-card__content">
                         <h3>Botella de acero inoxidable</h3>
                         <p>Mantente hidratado donde sea que vayas y reduce drásticamente el consumo de plástico. Nuestra botella de doble pared conserva la temperatura de tus bebidas por horas.</p>
-                        <button>Ver detalles</button>
+                        <a href="#" class="btn">Ver detalles</a>
                     </div>
                 </article>
                 
                 <!--segundo producto-->
-                <article>
+                <article class="product-card">
                     <img src="./img/cepillos de dientes de bambú.jpg" alt="Set de dos cepillos de dientes de bambú con cerdas de carbón activado">
-                    <div>
+                    <div class="product-card__content">
                         <h3>Cepillos de diente de bambú</h3>
                     <p>Una alternativa 100% biodegradable y sostenible para tu higiene dental. El mango es bambú compostable y las cercas son libres de BPA y contienen carbón activado para una mejor limpieza.</p>
-                    <button>Ver detalles</button>
+                    <a href="#" class="btn">Ver detalles</a>
                     </div>
                 </article>
 
                 <!--tercer producto-->
-                <article>
+                <article class="product-card">
                     <img src="./img/Bolsa de Tela Orgánica.jpg" alt="Bolsa de tela de algodón organico con um diseño de un paisaje">
-                    <div>
+                    <div class="product-card__content">
                         <h3>Bolsa de tela orgánica</h3>
                         <p>Perfecta para tus compras, resistente y con un diseño que te encantará. Cada vez que la usas, evitas que una bolsa de plástico termine en nuestros océanos.</p>
-                        <button>Ver detalles</button>
+                        <a href="#" class="btn">Ver detalles</a>
                     </div>
                 </article>
             </div>
         </section>
 
         <!--sección tabla comparativa-->
-        <section id="comparativa">
-            <div>
-                <h2>¿Por qué elegir EcoVida?</h2>
-                <table>
+        <section id="comparativa" class="comparison">
+             <div class="container">
+                <h2 class="section-title">Nuestra Filosofía: Calidad y Conciencia</h2>
+                <table class="comparison-table">
                     <caption>Beneficios de nuestros materiales frente a los tradicionales</caption>
                     <thead>
                         <tr>
@@ -87,24 +90,24 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Fuente</td>
-                            <td>Renovable y sostenible (Bambú, Algodón Orgánico)</td>
-                            <td>No renovable (Plástico derivado del petróleo)</td>
+                            <td>Fuente de origen</td>
+                            <td>Recursos renovables y sostenibles (Bambú, Algodón Orgánico, Acero Reciclado).</td>
+                            <td>Recursos no renovables (Plástico derivado del petróleo, materiales vírgenes).</td>
                         </tr>
                         <tr>
-                            <td>Ciclo de vida</td>
-                            <td>Biodegradable o altamente reciclable</td>
-                            <td>Tarda cientos de años en descomponerse</td>
+                            <td>Ciclo de vida del producto</td>
+                            <td>Diseñados para ser duraderos, biodegradables o altamente reciclables al final de su vida útil.</td>
+                            <td>Cultura de un solo uso. Tardan cientos de años en descomponerse, generando basura.</td>
                         </tr>
                         <tr>
-                            <td>Producción</td>
-                            <td>Bajo impacto, sin químicos tóxicos</td>
-                            <td>Contaminante y con alta huella de carbon</td>
+                            <td>Proceso de producción</td>
+                            <td>Bajo impacto ambiental, comercio justo y libre de químicos tóxicos perjudiciales.</td>
+                            <td>A menudo contaminante, con alta huella de carbono y condiciones laborales precarias.</td>
                         </tr>
                         <tr>
-                            <td>Salud</td>
-                            <td>Libre de BPA y toxinas</td>
-                            <td>Puede liberar microplásticos y químicos</td>
+                            <td>Impacto en tu salud</td>
+                            <td>Productos seguros, libres de BPA, ftalatos y otras toxinas dañinas para el cuerpo.</td>
+                            <td>ueden liberar microplásticos y químicos que afectan la salud a largo plazo.</td>
                         </tr>
                     </tbody>
                 </table>
@@ -112,26 +115,25 @@
         </section>
 
         <!--sección formulario de contacto-->
-        <section id="contacto">
-            <div>
-                <h2>¿Tienes dudas? ¡Escríbenos!</h2>
-                <form>
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2 class="section-title">¿Tienes dudas? ¡Escríbenos!</h2>
+                <form class="contact-form">
                     <fieldset>
-                        <legend>Formulaario de contacto</legend>
-                        <p>Estamos aquí para ayudarte. Completa el formulario y nuestro equipo se pondrá en contacto contigo lo antes posible.</p>
-                        <div>
+                         <p class="form-description">Estamos aquí para ayudarte. Completa el formulario y nuestro equipo de apasionados por la sostenibilidad se pondrá en contacto contigo lo antes posible.</p>
+                        <div class="form-group">
                             <label for="nombre">Nombre Completo</label>
                             <input type="text" id="nombre" name="nombre" placeholder="Ej: Tu nombre" required>
                         </div>
-                        <div>
+                        <div class="form-group">
                             <label for="email">Correo Electrónico</label>
                             <input type="email" id="email" name="email" placeholder="tu.correo@ejemplo.com" required>
                         </div>
-                        <div>
+                        <div class="form-group">
                             <label for="mensaje">Mensaje</label>
                             <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos cómo podemos ayudarte, pregunta por nuestros productos o déjanos tus sugerencias." required></textarea>
                         </div>
-                        <button type="submit">Enviar Mensaje</button>
+                        <button type="submit" class="btn btn--primary">Enviar Mensaje</button>
                     </fieldset>
                 </form>
             </div>
@@ -139,7 +141,7 @@
     </main>
 
     <!--pie de página-->
-    <footer>
+    <footer class="footer">
         <p> 2025 EcoVida | Gabriela Chunga Arias. Todos los derechos reservados.</p>
     </footer>
 </body>
